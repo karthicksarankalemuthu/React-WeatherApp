@@ -16,7 +16,7 @@ function App() {
   const findweather=async()=>{
 
      const key="d006878d86e335ab28e98a8f1064fb52";
-     const url="https://api.openweathermap.org/data/2.5/weather?q="+input+"&appid="+key;
+     const url="https://api.openweathermap.org/data/2.5/weather?q="+input+"&appid="+key+"&units=metric";
      const res=  await axios.get(url);
     
     const icon=res.data.weather[0].icon
